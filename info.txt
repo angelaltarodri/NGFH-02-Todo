@@ -1,0 +1,14 @@
+nest g m helloWorld
+// la r es de resolver
+nest g r helloWorld 
+npm i apollo-server-core
+
+    ahora en vez de 
+    import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
+    es 
+    import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
+
+    y en vez de 
+    plugins: [ApolloServerPluginLandingPageLocalDefault],
+    es
+    plugins: [ApolloServerPluginLandingPageLocalDefault()],
